@@ -1,54 +1,80 @@
-# Encyclopedia  Entry Name
+#`<div>`
 
-*Write a short "what it is" here. This can be a one-word definition.*
+*Container to group elements for styling purposes*
 
-Write a description here. Provide an overview of what the reference entry is, how it's used, it's significance, or how it's commonly used.
+The `<div>` element is a block element used to define sections of a web page by grouping elements together. This grouping of elements makes it easy to position elements in a layout. The `<div>` element thus should be viewed as a container for other elements.
 
+`<div>`s are usually given a `class` or `id` attribute, which are used to target them with CSS.
 
 ## Syntax
 
-Introduction to the syntax/usage. A example of CSS syntax is below:
+	<div attributes>
+		/* Child elements go here */
+	</div>
 
-```
-        background: <color | url(path) | others.. | none>;
-```
+### Attributes 
 
-### Values
+The `<div>` tag can make use of all [global attributes](https://developer.mozilla.org/en/docs/Web/HTML/Element/div).
 
-This is a CSS example, so each value would need it's own sub-section below.
+#### Class and Id
 
-#### Color
-
-An explanation of the "color" value belongs here.
-
-#### url(path)
-
-An explanation of using `url(path)` as a value to link to an image belongs here.
+The `class` and `id` attributes are commonly used with the `<div>` tag. Their usage is illustrated in the examples below.
 
 ## Example 1
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+In the example below three paragraphs are wrapped in a div with the class name `container`. Giving `<div>`s a class name is a common practice. Giving them an `id` happens less frequent. `id`s are used to target specific elements, that need a different styling for example. In the example HTML code below, the last paragraph can be targeted in CSS style sheets by referring to its id `last-paragraph`.
 
-```
-        background: green;
-```
+	<div class="container">
+		<div>
+			<p></p>
+		</div>
+		<div>
+			<p></p>
+		</div>
+		<div id="last-paragraph">
+			<p></p>
+		</div>
+	</div>
 
-## Example 2
+## Example 2 - Complex
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+In the following example, `<div>` elements are used to divide a web page first in colums and later divide those colums into rows. Of course, merely giving `<div>` elements such a class name won't arrange the web page for you. They need to be aligned using the `display` property of CSS for example. 
 
-```
-        background: url('path_to_image.png');
-```
+	<div class="container">
+		<div class="col">
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+		</div>
+		<div class="col">
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+		</div>
+		<div class="col">
+			<div class="row"></div>
+			<div class="row"></div>
+			<div class="row"></div>
+		</div>
+	</div>
 
-## Example 3 - Complex
+## Browser Support
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+### Desktop
 
-```
-        background: none 50% 25% auto contain fixed;
-```
+| Chrome  | Firefox | Internet Explorer | Opera | Safari |
+|:-------:|:-------:|:-----------------:|:-----:|:------:|
+|   1.0  |   Yes   |       Yes         |  Yes  |  Yes   |
+
+### Mobile
+
+| Android  | Firefox Mobile | IE Phone | Opera Mobile | Safari Mobile |
+|:--------:|:--------------:|:--------:|:------------:|:-------------:|
+|    Yes   |        Yes     |   Yes    |      Yes     |      Yes      |
+
 
 ## Special Notes
 
-Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.
+`<div>`s should only be used when no semantic tag is available for the task at hand. For example, to define a navigation bar, usage of the `<nav>` element is preferred.
+
+Because `<div>`s are block elements, they will be positioned under the previous element. This attribute can be changed by changed its display property to `inline` or `inline-block`.
