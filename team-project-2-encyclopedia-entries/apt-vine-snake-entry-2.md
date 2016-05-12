@@ -1,16 +1,18 @@
-# Encyclopedia  Entry Name
+# The `sup` Tag
 
-*Write a short "what it is" here. This can be a one-word definition.*
+In HTML, the `sup` tag is used to render superscript text.
 
-Write a description here. Provide an overview of what the reference entry is, how it's used, it's significance, or how it's commonly used.
+Characters formatted as superscript are generally half the height of standard characters and appear slightly above the normal line of type. Superscript is commonly used to render footnotes and mathematical exponents.
 
+Here's an example of superscript text alongside normally formatted characters:
+<pre>Here is the normal line of type <sup>And here is some superscript</pre>
 
 ## Syntax
 
-Introduction to the syntax/usage. A example of CSS syntax is below:
+To format text as superscript, wrap it in the `sup tags`:
 
 ```
-        background: <color | url(path) | others.. | none>;
+        ...
 ```
 
 ### Values
