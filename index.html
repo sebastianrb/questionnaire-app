@@ -37,7 +37,7 @@
 		<fieldset class="questionnaire-card disabled">
 			<h2>This section is disabled</h2>
 			<label class="question" for="card3-question1">Question</label>
-			<input id="card3-question1" class ="short-answer" type="text" placeholder="Your Answer">
+			<input id="card3-question1" class ="short-answer" type="text" placeholder="Answer">
 			<button class="button">Continue</button>
 		</fieldset>
 
@@ -48,7 +48,7 @@
 			<p class="description">Description paragraph.</p>
 			<img src="" alt="Cat">
 			<label class="question" for="card4-question1">Question</label>
-			<input id="card4-question1" class="short-answer" type="text" placeholder="Your Answer">
+			<input id="card4-question1" class="short-answer" type="text" placeholder="Answer">
 			<label class="question" for="card4-question2">Question</label>
 			<textarea name="" id="card4-question2" class="long-answer" cols="30" rows="10" placeholder="Long response using &lt;textarea&gt;"></textarea>
 			<button class="button">Continue</button>
@@ -57,7 +57,8 @@
 		<fieldset class="questionnaire-card">
 			<h2 class="title">Section Title w/ Form Elements</h2>
 			<p class="description">Description paragraph.</p>
-			<div class="multiple-choice">
+			<fieldset class="multiple-choice">
+			<legend class="multiple-choice-header">Multiple Choice w/ Radio Inputs</legend>
 				<label for="card5-radio1">
 				<input id="card5-radio1" type="radio">I like option A
 				</label>
@@ -67,17 +68,22 @@
 				<label for="card5-radio3">
 					<input id="card5-radio3" type="radio">I like option C
 				</label>
-			</div>
-			<div class="multiple-choice">
+			</fieldset>
+			<fieldset class="multiple-choice">
+			<legend class="multiple-choice-header">Multiple Choice w/ Checkbox Inputs</legend>
+
 				<label for="card5-checkbox1"><input id="card5-checkbox1" type="checkbox">I like option A</label>
 				<label for="card5-checkbox2"><input id="card5-checkbox2" type="checkbox">I like option B</label>
 				<label for="card5-checkbox3"><input id="card5-checkbox3" type="checkbox">I like option C</label>
-			</div>
+			</fieldset>
+			<label for="card5-select1" class="select-label">Dropdown Select from the list below:</label>
 			<p class="description">Description paragraph.</p>
-			<select name="" id="" class="dropdown">
-				<option value="">Option 1</option>
-				<option value="">Option 2</option>
-			</select>
+			<div class="select">	
+				<select name="" id="card5-select1" class="dropdown">
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+				</select>
+			</div>
 			<input type="submit" class="submit">
 		</fieldset>
 	</form>

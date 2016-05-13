@@ -15,6 +15,25 @@ body {
     font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
+select {
+  height: 3rem;
+  border: 1px solid #ccc;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+    background-color: #8e63cc;
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;  
+    font-weight: 100;
+    letter-spacing: .04em;
+    width: 200px;
+    padding: 18px;
+    border: none;
+}
+
 strong {
     font-weight: 500;
 }
@@ -37,6 +56,41 @@ h2.title {
     margin-bottom: 45px;
 }
 
-button {
-    background: #9F48D2;
+.question, .multiple-choice-header, .select-label {
+    font-weight: 600;
+}
+
+.short-answer, .long-answer  {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 4px solid #6B08AD;
+}
+
+.description {
+  color: #9e9e9e;
+  font-size: .9rem;
+}
+
+.multiple-choice {
+  border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #9e9e9e;
+    font-family: Roboto;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9e9e9e;
+    font-family: Roboto;
 }
