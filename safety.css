@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  background: url(./images/city_and_water.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+select {
+  height: 3rem;
+  border: 1px solid #ccc;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button {
+    background-color: #8e63cc;
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: .04em;
+    width: 200px;
+    padding: 18px;
+    border: none;
+}
+
+strong {
+    font-weight: 500;
+}
+
+fieldset.questionnaire-card {
+    width: 60%;
+    margin: 110px auto;
+    padding: 40px 85px 55px;
+    background: #FAFAFA;
+    border: none;
+    border-radius: 2px;
+}
+
+h2.title {
+    color: #6B08AD;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
+    font-size: 2.2em;
+    font-weight: 200;
+    margin-bottom: 45px;
+}
+
+.question, .multiple-choice-header, .select-label {
+    font-weight: 600;
+}
+
+.short-answer, .long-answer  {
+    padding: 5px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 4px solid #6B08AD;
+}
+
+.description {
+  color: #9e9e9e;
+  font-size: .9rem;
+}
+
+.multiple-choice {
+  border: none;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #9e9e9e;
+    font-family: Roboto;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9e9e9e;
+    font-family: Roboto;
+}
