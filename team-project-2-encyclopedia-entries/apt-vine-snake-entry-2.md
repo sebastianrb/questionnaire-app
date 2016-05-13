@@ -1,54 +1,70 @@
-# Encyclopedia  Entry Name
+# The `sup` Tag
+*Inline Element*
 
-*Write a short "what it is" here. This can be a one-word definition.*
+In HTML, the `sup` tag is used to define superscript text. The word "sup" is short for superscript.
 
-Write a description here. Provide an overview of what the reference entry is, how it's used, it's significance, or how it's commonly used.
+Characters formatted as superscript are smaller than standard characters and appear slightly above the normal line of type. Superscript is commonly used to render footnotes, language features, and mathematical exponents.
 
+Here's an example of superscript alongside normally formatted text:
+<pre>These are standard characters <sup>And here is some superscript</pre>
 
 ## Syntax
 
-Introduction to the syntax/usage. A example of CSS syntax is below:
+To format text as superscript, wrap it in `sup` tags:
 
 ```
-        background: <color | url(path) | others.. | none>;
+<sup>This text will be rendered as superscript.</sup>
+
+This text, however, will be rendered as normal, unformatted text.
 ```
 
-### Values
+### Attributes
+the `sup` tag has no element-specific attributes and, like all elements, accommodates the set of global attributes. [Click here](#) to learn more about HTML global attributes.
 
-This is a CSS example, so each value would need it's own sub-section below.
-
-#### Color
-
-An explanation of the "color" value belongs here.
-
-#### url(path)
-
-An explanation of using `url(path)` as a value to link to an image belongs here.
-
-## Example 1
-
-Write a introduction to the example, sufficient to explain what the example is showing.
+## Default Styling
+As noted above, superscript text is generally a fraction of the height of unformatted text and floats above the normal line of characters. This is achieved via a set of default CSS declarations associated with the `sup` tag; these declarations are defined by the User Agent styles specific to each browser. Here is a selection of the CSS styling for superscript text on the Chrome browser:
 
 ```
-        background: green;
+sup {
+    position: relative;
+    top: -0.5em;
+    font-size: 75%;
+    vertical-align: baseline;
+}
 ```
 
-## Example 2
+This styling effectively shrinks the text to 75% of the normal text size and then positions it at the top of the text line. Like any other element, the User Agent styles can be overwritten and new CSS can be written by the developer to suit individual needs and preferences.
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+## Using Superscript
 
-```
-        background: url('path_to_image.png');
-```
+As noted, superscript is commonly used to format text used in footnotes, exponents, and language-specific grammatical features. Here are some examples of superscript in action:
 
-## Example 3 - Complex
+Footnotes:
+<pre>According to the sociologists, the cultural traditions of the tribe
+were aberrant compared to those practiced throughout neighboring tribes
+and the surrounding regions<sup>2</sup>.</pre>
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+Mathematics:
+<pre>4x<sup>2</sup> + 2x - 4 = 0</pre>
 
-```
-        background: none 50% 25% auto contain fixed;
-```
+Language:
+<pre>Welcome, my friends, to the 21<sup>st</sup> Century!</pre>
+
+## Compatibility
+
+### Desktop
+
+| Chrome  | Firefox | Internet Explorer | Opera | Safari |
+|:-------:|:-------:|:-----------------:|:-----:|:------:|
+|   Yes  |   Yes   |       Yes         |  Yes  |  Yes   |
+
+### Mobile
+
+| Android  | Firefox Mobile | IE Phone | Opera Mobile | Safari Mobile |
+|:--------:|:--------------:|:--------:|:------------:|:-------------:|
+|    Yes   |        Yes     |   Yes    |      Yes     |      Yes      |
+
 
 ## Special Notes
 
-Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.
+Similar to superscript, subscript is a text format whereby text is minimized and printed slightly below the normal line of type. To render text in subscript, rather than superscript, you can use the `sub` tag. [Click here](#) to learn more about the `sub` tag and how subscript differs from superscript.
