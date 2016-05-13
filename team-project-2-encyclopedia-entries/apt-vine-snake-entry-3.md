@@ -1,39 +1,71 @@
-# Encyclopedia  Entry Name
+# The `min-height` Property
 
-*Write a short "what it is" here. This can be a one-word definition.*
+The `min-height` CSS property sets the minimum height measurement an element can exhibit.
 
-Write a description here. Provide an overview of what the reference entry is, how it's used, it's significance, or how it's commonly used.
+When a minimum height is set, the styled element will render at no less than the height set by the property's value; however, the element might render at greater heights, depending on the size and layout of its content and child elements.
 
+## Syntax and Application
 
-## Syntax
-
-Introduction to the syntax/usage. A example of CSS syntax is below:
+Here's an example of the `min-height` property styling `div` elements with the class of `tall`:
 
 ```
-        background: <color | url(path) | others.. | none>;
+div.tall {
+    min-height: <value>;
+}
 ```
+
+###Applicability
+The `min-height` property can be applied to all elements except for inline elements and table elements.
 
 ### Values
 
-This is a CSS example, so each value would need it's own sub-section below.
+The `min-height` property has a default, or initial, value of 0 and thus does not apply until set specifically by the user. In addition, this property is not inherited by any child elements.
 
-#### Color
+Accepted property values:
 
-An explanation of the "color" value belongs here.
+* Pixels
+* Percentages
+* Inherit
 
-#### url(path)
+#### Pixels
 
-An explanation of using `url(path)` as a value to link to an image belongs here.
+If the value is set in pixels, the target element will not exhibit a height of less than the specified pixel amount.
 
-## Example 1
+```
+fieldset#form {
+    min-height: 400px;
+}
+```
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+In the example above, the fieldset with ID `form` will always have a height of at least 400 pixels. The fieldset could become taller, however.
+
+#### Percentages
+
+If the value is set in a percentage, the target element will not exhibit a height of less than that percentage of the parent element's height.
+
+```
+fieldset#form div{
+    min-height: 20%;
+}
+```
+
+In the example above, any `div` element inside the `fieldset` will always have a height of at least 20% of the height of the `fieldset`. If the `fieldset` has a height of 1000 pixels, for instance, the child `div`s will exhibit a minimum height of 200 pixels (or 20% of 1000).
+
+#### Inherit
+
+If the value of the property is set to `inherit`, the target element will inherit the `min-height` value of the closest parent whose `min-height` value is set. If no parent is styled by the property, the target element won't inherit a minimum height.
+
+## Example: A Parent with Minimum Height
+
+In this example, we'll look at a parent div shaped as a pink block with the class of `parent`, and a child block-shaped div with the class of `child` inside of it.
+
+Keep in mind that, by default, elements will automatically adjust height to fit contents and child elements.
 
 ```
         background: green;
 ```
 
-## Example 2
+## Example: A Parent with Minimum Height
 
 Write a introduction to the example, sufficient to explain what the example is showing.
 
@@ -41,14 +73,17 @@ Write a introduction to the example, sufficient to explain what the example is s
         background: url('path_to_image.png');
 ```
 
-## Example 3 - Complex
 
-Write a introduction to the example, sufficient to explain what the example is showing.
+## Compatibility
 
-```
-        background: none 50% 25% auto contain fixed;
-```
+### Desktop
 
-## Special Notes
+| Chrome  | Firefox | Internet Explorer | Opera | Safari |
+|:-------:|:-------:|:-----------------:|:-----:|:------:|
+|   Yes  |   Yes   |       Yes         |  Yes  |  Yes   |
 
-Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.
+### Mobile
+
+| Android  | Firefox Mobile | IE Phone | Opera Mobile | Safari Mobile |
+|:--------:|:--------------:|:--------:|:------------:|:-------------:|
+|    Yes   |        Yes     |   Yes    |      Yes     |      Yes      |

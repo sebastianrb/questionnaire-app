@@ -1015,35 +1015,83 @@ body .markdown-body
   }
 }
 </style><title>apt-vine-snake-entry-2</title></head><body><article class="markdown-body"><h1 id="the-sup-tag"><a name="user-content-the-sup-tag" href="#the-sup-tag" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>The <code>sup</code> Tag</h1>
-<p>In HTML, the <code>sup</code> tag is used to render superscript text.</p>
-<p>Characters formatted as superscript are generally half the height of standard characters and appear slightly above the normal line of type. Superscript is commonly used to render footnotes and mathematical exponents.</p>
-<p>Here&rsquo;s an example of superscript text alongside normally formatted characters:<br />
-<pre>Here is the normal line of type <sup>And here is some superscript</pre></p>
+<p><em>Inline Element</em></p>
+<p>In HTML, the <code>sup</code> tag is used to define superscript text. The word &ldquo;sup&rdquo; is short for superscript.</p>
+<p>Characters formatted as superscript are smaller than standard characters and appear slightly above the normal line of type. Superscript is commonly used to render footnotes, language features, and mathematical exponents.</p>
+<p>Here&rsquo;s an example of superscript alongside normally formatted text:<br />
+<pre>These are standard characters <sup>And here is some superscript</pre></p>
 <h2 id="syntax"><a name="user-content-syntax" href="#syntax" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Syntax</h2>
-<p>To format text as superscript, wrap it in the <code>sup tags</code>:</p>
-<pre><code>        ...
+<p>To format text as superscript, wrap it in <code>sup</code> tags:</p>
+<pre><code>&lt;sup&gt;This text will be rendered as superscript.&lt;/sup&gt;
+
+This text, however, will be rendered as normal, unformatted text.
 </code></pre>
 
-<h3 id="values"><a name="user-content-values" href="#values" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Values</h3>
-<p>This is a CSS example, so each value would need it&rsquo;s own sub-section below.</p>
-<h4 id="color"><a name="user-content-color" href="#color" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Color</h4>
-<p>An explanation of the &ldquo;color&rdquo; value belongs here.</p>
-<h4 id="urlpath"><a name="user-content-urlpath" href="#urlpath" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>url(path)</h4>
-<p>An explanation of using <code>url(path)</code> as a value to link to an image belongs here.</p>
-<h2 id="example-1"><a name="user-content-example-1" href="#example-1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example 1</h2>
-<p>Write a introduction to the example, sufficient to explain what the example is showing.</p>
-<pre><code>        background: green;
+<h3 id="attributes"><a name="user-content-attributes" href="#attributes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Attributes</h3>
+<p>the <code>sup</code> tag has no element-specific attributes and, like all elements, accommodates the set of global attributes. <a href="#">Click here</a> to learn more about HTML global attributes.</p>
+<h2 id="default-styling"><a name="user-content-default-styling" href="#default-styling" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Default Styling</h2>
+<p>As noted above, superscript text is generally a fraction of the height of unformatted text and floats above the normal line of characters. This is achieved via a set of default CSS declarations associated with the <code>sup</code> tag; these declarations are defined by the User Agent styles specific to each browser. Here is a selection of the CSS styling for superscript text on the Chrome browser:</p>
+<pre><code>sup {
+    position: relative;
+    top: -0.5em;
+    font-size: 75%;
+    vertical-align: baseline;
+}
 </code></pre>
 
-<h2 id="example-2"><a name="user-content-example-2" href="#example-2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example 2</h2>
-<p>Write a introduction to the example, sufficient to explain what the example is showing.</p>
-<pre><code>        background: url('path_to_image.png');
-</code></pre>
-
-<h2 id="example-3-complex"><a name="user-content-example-3-complex" href="#example-3-complex" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example 3 - Complex</h2>
-<p>Write a introduction to the example, sufficient to explain what the example is showing.</p>
-<pre><code>        background: none 50% 25% auto contain fixed;
-</code></pre>
-
+<p>This styling effectively shrinks the text to 75% of the normal text size and then positions it at the top of the text line. Like any other element, the User Agent styles can be overwritten and new CSS can be written by the developer to suit individual needs and preferences.</p>
+<h2 id="using-superscript"><a name="user-content-using-superscript" href="#using-superscript" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Using Superscript</h2>
+<p>As noted, superscript is commonly used to format text used in footnotes, exponents, and language-specific grammatical features. Here are some examples of superscript in action:</p>
+<p>Footnotes:<br />
+<pre>According to the sociologists, the cultural traditions of the tribe<br />
+were aberrant compared to those practiced throughout neighboring tribes<br />
+and the surrounding regions<sup>2</sup>.</pre></p>
+<p>Mathematics:<br />
+<pre>4x<sup>2</sup> + 2x - 4 = 0</pre></p>
+<p>Language:<br />
+<pre>Welcome, my friends, to the 21<sup>st</sup> Century!</pre></p>
+<h2 id="compatibility"><a name="user-content-compatibility" href="#compatibility" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Compatibility</h2>
+<h3 id="desktop"><a name="user-content-desktop" href="#desktop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Desktop</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Chrome</th>
+<th align="center">Firefox</th>
+<th align="center">Internet Explorer</th>
+<th align="center">Opera</th>
+<th align="center">Safari</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
+<h3 id="mobile"><a name="user-content-mobile" href="#mobile" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Mobile</h3>
+<table>
+<thead>
+<tr>
+<th align="center">Android</th>
+<th align="center">Firefox Mobile</th>
+<th align="center">IE Phone</th>
+<th align="center">Opera Mobile</th>
+<th align="center">Safari Mobile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table>
 <h2 id="special-notes"><a name="user-content-special-notes" href="#special-notes" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Special Notes</h2>
-<p>Add information that you found that seemed lesser known. Common bugs, obscure bugs, important distinctions, all belong in this section.</p></article></body></html>
+<p>Similar to superscript, subscript is a text format whereby text is minimized and printed slightly below the normal line of type. To render text in subscript, rather than superscript, you can use the <code>sub</code> tag. <a href="#">Click here</a> to learn more about the <code>sub</code> tag and how subscript differs from superscript.</p></article></body></html>

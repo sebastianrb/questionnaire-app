@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+  background: url(./images/city_and_water.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+strong {
+    font-weight: 500;
+}
+
+fieldset.questionnaire-card {
+    width: 60%;
+    margin: 110px auto;
+    padding: 40px 85px 55px;
+    background: #FAFAFA;
+    border: none;
+    border-radius: 2px;
+}
+
+h2.title {
+    color: #6B08AD;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
+    font-size: 2.2em;
+    font-weight: 200;
+    margin-bottom: 45px;
+}
+
+button {
+    background: #9F48D2;
+}
