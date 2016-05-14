@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-size: 15px;
     font-family: "Roboto", "Helvetica Neue", sans-serif;
 }
 
@@ -40,7 +40,7 @@ select {
 }
 
 .button {
-    background: #9F48D2;
+    background: #975bcc;
 }
 
 button,
@@ -59,16 +59,59 @@ button,
     transition: .2s;
 }
 
-
-
 strong {
     font-weight: 500;
 }
 
+/*radio button and checkbox styling*/
+
+label.radio-label, label.checkbox-label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+}
+
+input[type=radio], input[type=checkbox] {
+    display: none;
+}
+
+label.radio-label:before, label.checkbox-label:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0px;
+    bottom: 2px;
+    background-color: #CCC;
+}
+
+label.radio-label:before {
+    border-radius: 8px;
+}
+
+input[type=radio]:checked + label.radio-label:before {
+    content: "\2022";
+    color: #696969;
+    font-size: 30px;
+    text-align: center;
+    line-height: 18px;
+}
+
+input[type=checkbox]:checked + label.checkbox-label:before {
+    content: "\2714";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size: 15px;
+    color: #696969;
+    text-align: center;
+    line-height: 16px;
+}
 
 /*class and ID styles*/
 
 fieldset.questionnaire-card {
+    position: relative;
     width: 60%;
     margin: 110px auto;
     padding: 40px 85px 50px;
@@ -128,7 +171,7 @@ h2.title {
 
 .description {
     color: rgba(116, 145, 166, 0.90);;
-    font-size: 1rem;
+    font-size: .9rem;
     margin-top: 5px;
     margin-bottom: 25px;
 }
@@ -145,12 +188,12 @@ h2.title {
 }
 
 .disabled-gray {
-    width: 59.3%;
-    height: 418px;
-    background: rgba(14, 13, 13, 0.4);
     position: absolute;
-    top: 1823px;
-    left: 290px;
+    top: 0;
+    left: 0;
+    width: 759px;
+    height: 410px;
+    background: rgba(14, 13, 13, 0.4);
     border-radius: 2px;
 }
 
@@ -187,7 +230,7 @@ label.select-label.required:after {
     content: "Required";
     float: right;
     color: #9B171B;
-    font-size: .8em;
+    font-size: .65em;
     text-transform: uppercase;
 }
 
