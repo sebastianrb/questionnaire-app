@@ -34,8 +34,8 @@
 			<button class="button">Continue</button>
 		</fieldset>
 
-		<div class="disabled-gray"></div>
 		<fieldset class="questionnaire-card disabled">
+			<div class="disabled-gray"></div>
 			<h2>This section is disabled</h2>
 			<label class="question" for="card3-question1">Question</label>
 			<input id="card3-question1" class ="short-answer" type="text" placeholder="Answer" disabled>
@@ -61,22 +61,24 @@
 			<p class="description">Description paragraph.</p>
 			<fieldset class="multiple-choice">
 			<legend class="multiple-choice-header">Multiple Choice w/ Radio Inputs</legend>
-				<label for="card5-radio1">
-				<input id="card5-radio1" type="radio" name="radio" class="radio">I like option A
+				<input id="card5-radio1" type="radio" name="radio" class="radio">
+				<label for="card5-radio1" class="radio-label">I like option A
 				</label>
-				<label for="card5-radio2">
-					<input id="card5-radio2" type="radio" name="radio" class="radio">I like option B
+				<input id="card5-radio2" type="radio" name="radio" class="radio">
+				<label for="card5-radio2" class="radio-label">I like option B
 				</label>
-				<label for="card5-radio3">
-					<input id="card5-radio3" type="radio" name="radio" class="radio">I like option C
+				<input id="card5-radio3" type="radio" name="radio" class="radio">
+				<label for="card5-radio3" class="radio-label">I like option C
 				</label>
 			</fieldset>
 			<fieldset class="multiple-choice">
 			<legend class="multiple-choice-header">Multiple Choice w/ Checkbox Inputs</legend>
-
-				<label for="card5-checkbox1"><input id="card5-checkbox1" type="checkbox">I like option A</label>
-				<label for="card5-checkbox2"><input id="card5-checkbox2" type="checkbox">I like option B</label>
-				<label for="card5-checkbox3"><input id="card5-checkbox3" type="checkbox">I like option C</label>
+				<input id="card5-checkbox1" type="checkbox">
+				<label for="card5-checkbox1" class="checkbox-label">I like option A</label>
+				<input id="card5-checkbox2" type="checkbox">
+				<label for="card5-checkbox2" class="checkbox-label">I like option B</label>
+				<input id="card5-checkbox3" type="checkbox">
+				<label for="card5-checkbox3" class="checkbox-label">I like option C</label>
 			</fieldset>
 			<label for="card5-select1" class="select-label required">Dropdown Select from the list below:</label>
 			<p class="description">Description paragraph.</p>
