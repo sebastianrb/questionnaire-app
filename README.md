@@ -13,11 +13,11 @@ We used GitHub Flow, including pull requests and branch usage, as our workflow a
 @brentguf
 
 * [`<div>`]()
-* [margin]()
+* [`margin`]()
 
 @sebastian-rb
 
 * [`<sup>`]()
-* [min-height]()
+* [`min-height`]()
 
 The JavaScript pages will be written after the Intro to JavaScript chapter has been completed.
