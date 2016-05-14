@@ -6,7 +6,7 @@ The GitHub page can be found here: (insert link).
 
 ## Workflow
 
-We used GitHub Flow, including pull requests and branch usage as our workflow and email for communication. 
+We used GitHub Flow, including pull requests and branch usage, as our workflow and email for communication. 
 
 # Team Project 2: Encyclopedia Entries
 
