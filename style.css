@@ -193,10 +193,8 @@ label.select-label.required:after {
 
 .short-answer:focus,
 .long-answer:focus  {
-  background: rgba(107, 8, 173, 0.05);
-  /*box-shadow:  0 0 5px 2px #6B08AD;*/
-/*  border-top: 4px solid #6B08AD;
-  height: 41px;*/
+  /*background: rgba(107, 8, 173, 0.05);*/
+  box-shadow: 0 0 5px 2px rgba(146, 144, 144, 0.8);
 }
 
 button:active,
