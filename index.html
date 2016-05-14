@@ -12,9 +12,9 @@
 			<h2 class="title">
 				<strong>Questionnaire</strong> Mockup
 			</h2>
-			<label for="card1-name" class="question">What are your first and last names?</label>
+			<label for="card1-name" class="question required">What are your first and last names?</label>
 			<input type="text" id="card1-name" class="short-answer" placeholder="John Wayne">
-			<label for="card1-email" class="question">What is your email address?</label>
+			<label for="card1-email" class="question required">What is your email address?</label>
 			<input type="text" id="card1-email" class="short-answer" placeholder="whatsup@moderndeveloper.com">
 			<label for="card1-color" class="question">What is your favorite color?</label>
 			<input type="text" id="card1-color" class="short-answer" placeholder="">
@@ -30,15 +30,16 @@
 			<label for="card2-question2" class="question">Question</label>
 			<input type="text" id="card2-question2" class="short-answer" placeholder="">
 			<label for="card2-question3" class="question">Question</label>
-			<textarea name="" id="card2-question3" class="long-answer" cols="30" rows="10" placeholder="Long Response, using &lt;textarea&gt;"></textarea>
+			<textarea name="" id="card2-question3" class="long-answer" cols="30" rows="7" placeholder="Long Response, using &lt;textarea&gt;"></textarea>
 			<button class="button">Continue</button>
 		</fieldset>
 
+		<div class="disabled-gray"></div>
 		<fieldset class="questionnaire-card disabled">
 			<h2>This section is disabled</h2>
 			<label class="question" for="card3-question1">Question</label>
-			<input id="card3-question1" class ="short-answer" type="text" placeholder="Your Answer">
-			<button class="button">Continue</button>
+			<input id="card3-question1" class ="short-answer" type="text" placeholder="Answer" disabled>
+			<button class="button" disabled>Continue</button>
 		</fieldset>
 
 		<fieldset class="questionnaire-card">
@@ -46,38 +47,45 @@
 				<strong>Strong</strong> Section Title
 			</h2>
 			<p class="description">Description paragraph.</p>
-			<img src="" alt="Cat">
+			<img class="form-image" src="./images/city_and_sun.jpeg" alt="Cat">
 			<label class="question" for="card4-question1">Question</label>
-			<input id="card4-question1" class="short-answer" type="text" placeholder="Your Answer">
+			<p class="description">Description paragraph.</p>
+			<input id="card4-question1" class="short-answer" type="text" placeholder="Answer">
 			<label class="question" for="card4-question2">Question</label>
-			<textarea name="" id="card4-question2" class="long-answer" cols="30" rows="10" placeholder="Long response using &lt;textarea&gt;"></textarea>
+			<textarea name="" id="card4-question2" class="long-answer" cols="30" rows="7" placeholder="Long response using &lt;textarea&gt;"></textarea>
 			<button class="button">Continue</button>
 		</fieldset>
 
 		<fieldset class="questionnaire-card">
 			<h2 class="title">Section Title w/ Form Elements</h2>
 			<p class="description">Description paragraph.</p>
-			<div class="multiple-choice">
+			<fieldset class="multiple-choice">
+			<legend class="multiple-choice-header">Multiple Choice w/ Radio Inputs</legend>
 				<label for="card5-radio1">
-				<input id="card5-radio1" type="radio">I like option A
+				<input id="card5-radio1" type="radio" name="radio" class="radio">I like option A
 				</label>
 				<label for="card5-radio2">
-					<input id="card5-radio2" type="radio">I like option B
+					<input id="card5-radio2" type="radio" name="radio" class="radio">I like option B
 				</label>
 				<label for="card5-radio3">
-					<input id="card5-radio3" type="radio">I like option C
+					<input id="card5-radio3" type="radio" name="radio" class="radio">I like option C
 				</label>
-			</div>
-			<div class="multiple-choice">
+			</fieldset>
+			<fieldset class="multiple-choice">
+			<legend class="multiple-choice-header">Multiple Choice w/ Checkbox Inputs</legend>
+
 				<label for="card5-checkbox1"><input id="card5-checkbox1" type="checkbox">I like option A</label>
 				<label for="card5-checkbox2"><input id="card5-checkbox2" type="checkbox">I like option B</label>
 				<label for="card5-checkbox3"><input id="card5-checkbox3" type="checkbox">I like option C</label>
-			</div>
+			</fieldset>
+			<label for="card5-select1" class="select-label required">Dropdown Select from the list below:</label>
 			<p class="description">Description paragraph.</p>
-			<select name="" id="" class="dropdown">
-				<option value="">Option 1</option>
-				<option value="">Option 2</option>
-			</select>
+			<div class="select">
+				<select name="" id="card5-select1" class="dropdown">
+					<option value="">Option 1</option>
+					<option value="">Option 2</option>
+				</select>
+			</div>
 			<input type="submit" class="submit">
 		</fieldset>
 	</form>

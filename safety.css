@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+}
+
+/*element styles*/
+
+html {
+  background: url(./images/city_and_water.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", "Helvetica Neue", sans-serif;
+}
+
+select {
+    height: 3rem;
+    border: 1px solid #ccc;
+    font-size: inherit;
+    font-family: inherit;
+    background: url(./images/down_arrow.png) no-repeat right #fff;
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    line-height: 1;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 0;
+    height: 34px;
+    -webkit-appearance: none;
+    background-size: 10px;
+    background-position: 98.5%;
+}
+
+.submit {
+    background: #BA0077;
+}
+
+.button {
+    background: #9F48D2;
+}
+
+button,
+.submit {
+    color: white;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: .04em;
+    width: 200px;
+    padding: 18px;
+    border: none;
+    margin: 45px auto 0;
+    display: block;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+
+strong {
+    font-weight: 500;
+}
+
+
+/*class and ID styles*/
+
+fieldset.questionnaire-card {
+    width: 60%;
+    margin: 110px auto;
+    padding: 40px 85px 50px;
+    /*background: #FAFAFA;*/
+    background: #F5F2F2;
+    border: none;
+    border-radius: 2px;
+}
+
+h2.title {
+    color: #6B08AD;
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
+    font-size: 2.2em;
+    font-weight: 200;
+    margin-bottom: 30px;
+}
+
+.disabled h2 {
+    color: rgba(128, 128, 128, 0.74);
+    font-weight: 100;
+    font-size: 2.1em;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
+    padding-bottom: 25px;
+}
+
+.multiple-choice-header {
+    margin-bottom: 9px;
+}
+
+.question, .multiple-choice-header, .select-label {
+    font-weight: 600;
+    color: rgba(28, 55, 68, 0.84);
+    font-size: 1.2em;
+    display: block;
+    padding: 20px 0;
+}
+
+.short-answer {
+    height: 45px;
+}
+
+.short-answer, .long-answer  {
+    padding: 10px 7px;
+    font-size: 1.1em;
+    border: none;
+    border-bottom: 4px solid #6B08AD;
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.40s;
+    -moz-transition: all 0.40s;
+    -ms-transition: all 0.40s;
+    -o-transition: all 0.40s;
+    outline: none;
+}
+
+.description {
+    color: rgba(116, 145, 166, 0.90);;
+    font-size: 1rem;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.multiple-choice {
+    border: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.multiple-choice label {
+    display: block;
+    margin: 0 0 15px 0;
+}
+
+.disabled-gray {
+    width: 59.3%;
+    height: 418px;
+    background: rgba(14, 13, 13, 0.4);
+    position: absolute;
+    top: 1823px;
+    left: 290px;
+    border-radius: 2px;
+}
+
+img.form-image {
+    width: 100%;
+    margin: 20px 0;
+    display: block;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #9e9e9e;
+    font-family: Roboto;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #9e9e9e;
+    font-family: Roboto;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9e9e9e;
+    font-family: Roboto;
+}
+
+
+/*pseudo elements and styles*/
+
+label.question.required:after,
+label.select-label.required:after {
+    content: "Required";
+    float: right;
+    color: #9B171B;
+    font-size: .8em;
+    text-transform: uppercase;
+}
+
+.short-answer:focus,
+.long-answer:focus  {
+  background: rgba(107, 8, 173, 0.05);
+  /*box-shadow:  0 0 5px 2px #6B08AD;*/
+/*  border-top: 4px solid #6B08AD;
+  height: 41px;*/
+}
+
+button:active,
+.submit:active {
+    position: relative;
+    top: 3px;
+    outline: none;
+}
+
+input:focus,
+button:focus,
+select:focus {
+    outline: none;
+}
+
+button:hover {
+    background: #6B08AD;
+}
+
+.submit:hover {
+    background: #920860;
+}
+
+button:hover,
+.submit:hover {
+    transition: .2s;
+}
+
+.disabled button:hover {
+    background: #9F48D2;
+    cursor: default;
+}

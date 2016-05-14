@@ -1052,17 +1052,94 @@ body .markdown-body
 <p>In the example above, any <code>div</code> element inside the <code>fieldset</code> will always have a height of at least 20% of the height of the <code>fieldset</code>. If the <code>fieldset</code> has a height of 1000 pixels, for instance, the child <code>div</code>s will exhibit a minimum height of 200 pixels (or 20% of 1000).</p>
 <h4 id="inherit"><a name="user-content-inherit" href="#inherit" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Inherit</h4>
 <p>If the value of the property is set to <code>inherit</code>, the target element will inherit the <code>min-height</code> value of the closest parent whose <code>min-height</code> value is set. If no parent is styled by the property, the target element won&rsquo;t inherit a minimum height.</p>
-<h2 id="example-a-parent-with-minimum-height"><a name="user-content-example-a-parent-with-minimum-height" href="#example-a-parent-with-minimum-height" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example: A Parent with Minimum Height</h2>
-<p>Write a introduction to the example, sufficient to explain what the example is showing.</p>
-<p>If not element is set,</p>
-<pre><code>        background: green;
+<h2 id="example-1-a-parent-with-minimum-height"><a name="user-content-example-1-a-parent-with-minimum-height" href="#example-1-a-parent-with-minimum-height" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example 1: A Parent with Minimum Height</h2>
+<p>In this example, we&rsquo;ll look at a parent div shaped as a pink block with the class of <code>parent</code>, and a child block-shaped div with the class of <code>child</code> inside of it.</p>
+<p>Keep in mind that, by default, elements will automatically adjust height to fit contents and child elements. In the example below, the child element has a height of <code>500px</code> and the parent element has a <code>min-height</code> of <code>350px</code>:</p>
+<p><img alt="" src="/Users/Sebastian/Desktop/Coding/Modern%20Developer/Workspace/Projects/questionnaire-app/team-project-2-encyclopedia-entries/images/example_1_big.png" /></p>
+<p>The styles for these two elements are as follows:</p>
+<pre><code>.parent {
+    width: 60%;
+    background: coral;
+    margin: 30px auto;
+    text-align: center;
+    min-height: 350px;
+}
+
+.child  {
+    width: 50%;
+    background: cyan;
+    text-align: center;
+    padding: 30px;
+    height: 500px;
+}
 </code></pre>
 
-<h2 id="example-a-parent-with-minimum-height_1"><a name="user-content-example-a-parent-with-minimum-height_1" href="#example-a-parent-with-minimum-height_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example: A Parent with Minimum Height</h2>
-<p>Write a introduction to the example, sufficient to explain what the example is showing.</p>
-<pre><code>        background: url('path_to_image.png');
+<p>Note that the parent block expands its height to accommodate the 500 pixel height of the child element.</p>
+<p>Now let&rsquo;s see what happens when we shrink the child element down to 200px. If the parent had no minimum height set, we would expect it to shrink along with the child.  However, the <code>min-height</code> of <code>350px</code> prevents the height from falling below 350 pixels:</p>
+<p><img alt="" src="/Users/Sebastian/Desktop/Coding/Modern%20Developer/Workspace/Projects/questionnaire-app/team-project-2-encyclopedia-entries/images/example_1_small.png" /></p>
+<p>The new styles for these two elements are as follows:</p>
+<pre><code>.parent {
+    width: 60%;
+    background: coral;
+    margin: 30px auto;
+    text-align: center;
+    min-height: 350px;
+}
+
+.child  {
+    width: 50%;
+    background: cyan;
+    text-align: center;
+    padding: 30px;
+    height: 200px;
+}
 </code></pre>
 
+<p>The parent element doesn&rsquo;t shrink down to match the height of the child. Instead, it maintains its minimum height of 350 pixels, as dictated by the <code>min-height: 350px</code> declaration.</p>
+<h2 id="example-2-a-child-with-minimum-height-of-75"><a name="user-content-example-2-a-child-with-minimum-height-of-75" href="#example-2-a-child-with-minimum-height-of-75" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Example 2: A Child with Minimum Height of 75%</h2>
+<p>In this example, we&rsquo;ll look at the parent and child blocks from the last example with some slightly different styling. This time, we&rsquo;ll give the child element a minimum height of 75%, which will ensure the child doesn&rsquo;t exhibit a height of below 75% of its parent&rsquo;s height.</p>
+<p>Here are the elements with the parent element&rsquo;s height set to <code>400px</code> and the child&rsquo;s <code>min-height</code> set to 75%:</p>
+<p><img alt="" src="/Users/Sebastian/Desktop/Coding/Modern%20Developer/Workspace/Projects/questionnaire-app/team-project-2-encyclopedia-entries/images/example_2_big.png" /></p>
+<p>The styles for these two elements are as follows:</p>
+<pre><code>.parent {
+    width: 60%;
+    background: coral;
+    margin: 30px auto;
+    text-align: center;
+    height: 400px;
+}
+
+.child  {
+    width: 50%;
+    background: cyan;
+    text-align: center;
+    padding: 30px;
+    min-height: 75%;
+}
+</code></pre>
+
+<p>The child element does not have a static height; rather, its height will always be at least 75% of the parents height. Note, however, that the child&rsquo;s height can grow larger than the parent&rsquo;s height.</p>
+<p>Now let&rsquo;s set the parent&rsquo;s height to <code>200px</code> and see how the child&rsquo;s height responds:</p>
+<p><img alt="" src="/Users/Sebastian/Desktop/Coding/Modern%20Developer/Workspace/Projects/questionnaire-app/team-project-2-encyclopedia-entries/images/example_2_small.png" /></p>
+<p>The new styles for these two elements are as follows:</p>
+<pre><code>.parent {
+    width: 60%;
+    background: coral;
+    margin: 30px auto;
+    text-align: center;
+    height: 200px;
+}
+
+.child  {
+    width: 50%;
+    background: cyan;
+    text-align: center;
+    padding: 30px;
+    min-height: 75%;
+}
+</code></pre>
+
+<p>The child element shrinks down to maintain a height of 75% of the parent. Thus, we observe that percentages can prove useful when we want elements to adapt to the height of their parents.</p>
 <h2 id="compatibility"><a name="user-content-compatibility" href="#compatibility" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Compatibility</h2>
 <h3 id="desktop"><a name="user-content-desktop" href="#desktop" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Desktop</h3>
 <table>
