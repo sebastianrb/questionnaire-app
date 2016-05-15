@@ -2,7 +2,7 @@
 
 Project by apt-vine-snake. Members: [@brentguf](https://github.com/brentguf) and [@sebastianrb](https://github.com/sebastianrb).
 
-The GitHub page can be found here: (insert link).
+The GitHub page can be found [here](http://brentguf.github.io/questionnaire-app/).
 
 ## Workflow
 
