@@ -2,7 +2,7 @@
 
 *Container to group elements for styling purposes*
 
-The `<div>` element is a block element used to define sections of a web page by grouping elements together. This grouping of elements makes it easy to position elements in a layout. The `<div>` element thus should be viewed as a container for other elements.
+The `<div>` element is a block element used to define sections of a web page by grouping elements together. This grouping of elements makes it easy to position elements in a layout. The `<div>` element should be thus viewed as a container for other elements.
 
 `<div>`s are usually given a `class` or `id` attribute, which are used to target them with CSS.
 
@@ -14,7 +14,7 @@ The `<div>` element is a block element used to define sections of a web page by 
 
 ### Attributes 
 
-The `<div>` tag can make use of all [global attributes](https://developer.mozilla.org/en/docs/Web/HTML/Element/div).
+The `<div>` tag can have all [global attributes](https://developer.mozilla.org/en/docs/Web/HTML/Element/div).
 
 #### Class and Id
 
@@ -38,7 +38,7 @@ In the example below three paragraphs are wrapped in a div with the class name `
 
 ## Example 2 - Complex
 
-In the following example, `<div>` elements are used to divide a web page first in colums and later divide those colums into rows. Of course, merely giving `<div>` elements such a class name won't arrange the web page for you. They need to be aligned using the `display` property of CSS for example. 
+In the following example, `<div>` elements are used to divide a web page first in colums and later divide those colums into rows. Of course, merely giving `<div>` elements such a class name won't necessarily arrange the web page for you. They need to be aligned using the `display` property of CSS for example. 
 
 	<div class="container">
 		<div class="col">
@@ -75,6 +75,6 @@ In the following example, `<div>` elements are used to divide a web page first i
 
 ## Special Notes
 
-`<div>`s should only be used when no semantic tag is available for the task at hand. For example, to define a navigation bar, usage of the `<nav>` element is preferred.
+`<div>`s should only be used when no semantic tag is available for the task at hand. For example, to define a navigation bar the `<nav>` element is preferred.
 
 Because `<div>`s are block elements, they will be positioned under the previous element. This attribute can be changed by changed its display property to `inline` or `inline-block`.

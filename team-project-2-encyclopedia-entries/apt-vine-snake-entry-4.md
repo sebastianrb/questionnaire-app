@@ -2,6 +2,8 @@
 
 *Shorthand CSS property to set space around elements*
 
+The `margin` property is the outermost element of the box model. It creates space around an element's border.
+
 The `margin` property is used to set the top, right, bottom and left margin of an HTML element in one line as opposed to declaring `margin-top`, `margin-right`, `margin-bottom` and `margin-left` seperately.
 
 Setting values for `margin` works clockwise: the first value that is specified is the top margin, the second value is the right margin, the third value is the bottom margin and the fourth value is the left margin.
@@ -25,7 +27,7 @@ The usage of all forms is illustrated in the examples below.
 
 To set a fixed width on an element, the `length` value is used. Both absolute and relative units can be used to express a `length`. The most commonly used units are `em`/`rem` (relative) and `px` (absolute). The `em` and `rem` values are relative to the parent element's font size and the root element's (e.g. `<html>`) respectively. 
 
-Negative values are allowed here and do what is expected: move an element to the the side of the specific margin. So `margin: 0 0 -5px 0` would 'absorb' the element to the bottom.
+Negative values are allowed here and do what is expected: move an element to the the side of the specific margin. So `margin: 0 0 -5px 0` would 'absorb' the element into the bottom.
 
 #### percentage
 
@@ -35,13 +37,13 @@ A percentage value will set the margin of an element to a percentage of its pare
 
 The `auto` value tells a margin to use all available space left. It doesn't work on inline elements, floated elements and absolute elements. `auto` will also not work on a block element withouth a specified `width`. Lastly, it will only work on horizontal margins (left and right). When auto is used for vertical margins, it will set those margins to 0px (except on absolute elements).
 
-The `auto` value can this be used to set the left and right margin of block elements evenly, which will result in the element being centered. It will let the left and right margins increase, until the element is centered horizontally (in alignment with the y-axis of the viewport). To center a `<div>` element for example, the `auto` value could be used in the following way: `margin: 0 auto;`. Note that the `0` actually doesn't even need to be specified, since the browser will set it to 0 automatically when `auto` is applied to a vertical margin.
+The `auto` value can thus be used to set the left and right margin of block elements evenly, which will result in the element being centered. It will let the left and right margins increase, until the element is centered horizontally (in alignment with the y-axis of the viewport). To center a `<div>` element for example, the `auto` value could be used in the following way: `margin: 0 auto;`. Note that the `0` actually doesn't even need to be specified, since the browser will set it to 0 automatically when `auto` is applied to a vertical margin.
 
 #### initial
 
 `initial` will set the `margin` property to its default value. 
 
-You may wonder why you would want to set this value. If you want the default value, you wouldn't change the `margin` property in the first place. A good example when you would want to use this value is when a class overwrote the margin of an element, but you didn't want a particular value to change. In that case, you could target the element and set its `margin` value to `initial`, which changes it back to the default value.
+You may wonder why you would want to set this value. If you want the default value, you wouldn't change the `margin` property in the first place. A good example when you would want to use this value is when a class overwrote the margin of an element, but you didn't want a particular element's margin to change. In that case, you could target the element and set its `margin` value to `initial`, which changes it back to the default value.
 
 #### inherit
 
@@ -95,4 +97,21 @@ This example will set the top margin to 30px and the bottom margin to 0px (note 
 |    1.0   |        1.0     |   6.0    |      6.0     |      1.0      |
 
 ## Special Notes
+
+Vertical margins of block elements may collapse into a single margin (the margin of whichever element has the largest margin). This happens in the following cases:
+	
+* Two adjacent siblings (elements directly following each other) have their margins collapsed.
+
+* Empty block elements (no border, padding, inline content, `height` or `min-height` to separate the top margin of an element from its bottom margin) have their margins collapsed as well.
+
+* A parent element and its first child have their top margins collapsed when no border, padding, inline content or clearance separates the top margin of the parent element and that of the child element. The margin becomes the largest of the two elements and ends up outside of the parent element.
+
+* A parent element and its last child have their bottom margins collapsed when no border, padding, inline content, (`min-/max-`)`height` separates the bottom margins of the two.
+
+The parent/child cases can be solved in a variety of ways.
+
+* Floating either the parent or child element.
+* Making either the parent of child an inline element.
+* Setting the `overflow` property of the parent element to `auto`.
+
 
