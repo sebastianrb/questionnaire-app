@@ -1,8 +1,8 @@
-# Team Project 1: Questionnaire App
-
 Project by apt-vine-snake. Members: [@brentguf](https://github.com/brentguf) and [@sebastianrb](https://github.com/sebastianrb).
 
-The GitHub page can be found [here](http://brentguf.github.io/questionnaire-app/).
+# Team Project 1: Questionnaire App
+
+The GitHub page for the Questionnaire App can be found [here](http://brentguf.github.io/questionnaire-app/).
 
 ## Workflow
 
