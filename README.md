@@ -12,12 +12,12 @@ We used GitHub Flow, including pull requests and branch usage, as our workflow a
 
 @brentguf
 
-* [`<div>`]()
-* [`margin`]()
+* [`<div>`](team-project-2-encyclopedia-entries/apt-vine-snake-entry-1.md)
+* [`margin`](team-project-2-encyclopedia-entries/apt-vine-snake-entry-4.md)
 
 @sebastian-rb
 
-* [`<sup>`]()
-* [`min-height`]()
+* [`<sup>`](team-project-2-encyclopedia-entries/apt-vine-snake-entry-2.md)
+* [`min-height`](team-project-2-encyclopedia-entries/apt-vine-snake-entry-3.md)
 
 The JavaScript pages will be written after the Intro to JavaScript chapter has been completed.
