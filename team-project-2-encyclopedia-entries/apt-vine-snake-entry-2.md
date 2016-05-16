@@ -1,4 +1,5 @@
 # The `sup` Tag
+**Tag used to format text as superscript**
 *Inline Element*
 
 In HTML, the `sup` tag is used to define superscript text. The word "sup" is short for superscript.
