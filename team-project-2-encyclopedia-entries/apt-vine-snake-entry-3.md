@@ -1,5 +1,5 @@
 # The `min-height` Property
-**CSS Property used to set the minimum allowable height of an element**
+*CSS Property used to set the minimum allowable height of an element*
 
 The `min-height` CSS property sets the minimum height measurement an element can exhibit.
 
