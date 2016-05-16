@@ -112,7 +112,7 @@ input[type=checkbox]:checked + label.checkbox-label:before {
 
 fieldset.questionnaire-card {
     position: relative;
-    width: 60%;
+    width: 57%;
     margin: 110px auto;
     padding: 40px 85px 50px;
     /*background: #FAFAFA;*/
@@ -156,7 +156,7 @@ h2.title {
 
 .short-answer, .long-answer  {
     padding: 10px 7px;
-    font-size: 1.1em;
+    font-size: 1.18em;
     border: none;
     border-bottom: 4px solid #6B08AD;
     display: block;
@@ -184,7 +184,8 @@ h2.title {
 
 .multiple-choice label {
     display: block;
-    margin: 0 0 15px 0;
+    margin: 0 0 19px 0;
+    font-size: 1.15em;
 }
 
 .disabled-gray {
@@ -199,7 +200,7 @@ h2.title {
 
 img.form-image {
     width: 100%;
-    margin: 20px 0;
+    margin: 20px 0 26px;
     display: block;
 }
 
@@ -229,14 +230,14 @@ label.question.required:after,
 label.select-label.required:after {
     content: "Required";
     float: right;
-    color: #9B171B;
-    font-size: .65em;
+    /*color: #9B171B;*/
+    color: #B50014;
+    font-size: .72em;
     text-transform: uppercase;
 }
 
 .short-answer:focus,
 .long-answer:focus  {
-  /*background: rgba(107, 8, 173, 0.05);*/
   box-shadow: 0 0 5px 2px rgba(146, 144, 144, 0.8);
 }
 
