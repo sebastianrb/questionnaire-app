@@ -84,7 +84,7 @@ input[type=checkbox]:checked + label.checkbox-label:before {
 fieldset.questionnaire-card {
     background-color: #F5F2F2;
     position: relative;
-    width: 58%;
+    width: 700px;
     margin: 110px auto;
     border: none;
     border-radius: 2.5px;
