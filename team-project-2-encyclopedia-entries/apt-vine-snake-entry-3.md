@@ -1,13 +1,13 @@
 # The `min-height` Property
-**CSS Property used to set minimum allowable height of an element**
+**CSS Property used to set the minimum allowable height of an element**
 
 The `min-height` CSS property sets the minimum height measurement an element can exhibit.
 
-When a minimum height is set, the styled element will render at no less than the height set by the property's value; however, the element might render at greater heights, depending on the size and layout of its content and child elements.
+When a minimum height is set, the styled element will render at no less than the height indicated by the property's value; however, the element might render at greater heights, depending on the size and layout of its content and child elements.
 
 ## Syntax and Application
 
-Here's an example of the `min-height` property styling `div` elements with the class of `tall`:
+Here's an example of the `min-height` property styling `div` elements with the `tall` class:
 
 ```
 div.tall {
@@ -15,8 +15,7 @@ div.tall {
 }
 ```
 
-###Applicability
-The `min-height` property can be applied to all elements except for inline elements and table elements.
+In the model above, <value> is a placeholder for a height measurement. Possible formats for this height measurement are discussed in greater detail below.
 
 ### Values
 
@@ -38,7 +37,7 @@ fieldset#form {
 }
 ```
 
-In the example above, the fieldset with ID `form` will always have a height of at least 400 pixels. The fieldset could become taller, however.
+In the example above, the fieldset with ID `form` will always have a height of at least 400 pixels. The fieldset could become taller, however, to accommodate child elements and content.
 
 #### Percentages
 
@@ -50,17 +49,20 @@ fieldset#form div{
 }
 ```
 
-In the example above, any `div` element inside the `fieldset` will always have a height of at least 20% of the height of the `fieldset`. If the `fieldset` has a height of 1000 pixels, for instance, the child `div`s will exhibit a minimum height of 200 pixels (or 20% of 1000).
+In the example above, any `div` element inside the `fieldset` with ID "form" will always have a height of at least 20% of the height of the `fieldset`. If the `fieldset` has a height of 1000 pixels, for instance, the child `div`s will exhibit a minimum height of 200 pixels (200 is equal to 20% of 1000).
 
 #### Inherit
 
-If the value of the property is set to `inherit`, the target element will inherit the `min-height` value of the closest parent whose `min-height` value is set. If no parent is styled by the property, the target element won't inherit a minimum height.
+If the value of the property is set to `inherit`, the target element will inherit the `min-height` value of the closest parent whose minimum height is set. If no parent is styled by the property, the target element won't inherit a minimum height.
+
+###Applicability
+The `min-height` property can be applied to all elements except for inline elements and table elements.
 
 ## Example 1: A Parent with Minimum Height
 
 In this example, we'll look at a parent div shaped as a pink block with the class of `parent`, and a child block-shaped div with the class of `child` inside of it.
 
-Keep in mind that, by default, elements will automatically adjust height to fit contents and child elements. In the example below, the child element has a height of `500px` and the parent element has a `min-height` of `350px`:
+Keep in mind that, by default, elements will automatically adjust height to fit the size of contents and child elements. In the example below, the child element has a height of `500px` and the parent element has a `min-height` of `350px`:
 
 ![](./images/example_1_big.png)
 
@@ -143,7 +145,7 @@ The styles for these two elements are as follows:
 ```
 
 
-The child element does not have a static height; rather, its height will always be at least 75% of the parents height. Note, however, that the child's height can grow larger than the parent's height.
+The child element does not have a static height; rather, its height is dynamic and will always be at least 75% of the parents height. Note, however, that the child's height can grow larger than the parent's height.
 
 Now let's set the parent's height to `200px` and see how the child's height responds:
 
@@ -170,7 +172,7 @@ The new styles for these two elements are as follows:
 ```
 
 
-The child element shrinks down to maintain a height of 75% of the parent. Thus, we observe that percentages can prove useful when we want elements to adapt to the height of their parents.
+The child element shrinks down to maintain a height of 75% of the parent. Thus, we observe that percentages can prove useful when we want elements to adapt to the height of their parents, parents that might exhibit variable heights on the webpage.
 
 ## Compatibility
 
