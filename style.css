@@ -19,6 +19,8 @@ body {
 
 select {
 	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
     font-family: inherit;
     background: url(./images/down_arrow.png) no-repeat right #fff;
     background-size: 10px;
@@ -108,7 +110,7 @@ input[type=checkbox]:checked + label.checkbox-label:before {
 fieldset.questionnaire-card {
     background-color: #F5F2F2;
     position: relative;
-    width: 57%;
+    width: 700px;
     margin: 110px auto;
     border: none;
     border-radius: 2.5px;
