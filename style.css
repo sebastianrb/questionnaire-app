@@ -106,7 +106,7 @@ input[type=checkbox]:checked + label.checkbox-label:before {
 /*class and ID styles*/
 
 fieldset.questionnaire-card {
-	background-color: #F5F2F2;
+    background-color: #F5F2F2;
     position: relative;
     width: 57%;
     margin: 110px auto;
@@ -157,7 +157,7 @@ h2.title {
         -ms-transition: all 0.40s;
          -o-transition: all 0.40s;
     margin-bottom: 23px;
-	border: none;
+    border: none;
     border-bottom: 4px solid #6B08AD;
     padding: 10px 7px;
     outline: none;
@@ -174,7 +174,7 @@ h2 + p.description {
 }
 
 .multiple-choice {
-	margin-left: 0;
+    margin-left: 0;
     border: none;
     padding-left: 0;
 }
