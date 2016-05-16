@@ -31,33 +31,7 @@ select {
     line-height: 1;
     border: 1px solid rgba(128, 128, 128, 0.6);
     border-radius: 0;
-    padding: 5px;   
-}
-
-.submit {
-    background-color: #BA0077;
-}
-
-.button {
-    background-color: #975bcc;
-}
-
-button,
-.submit {
-    color: white;
-    font: 100 14px Roboto;
-    letter-spacing: .04em;
-    width: 200px;
-    margin: 45px auto 0;
-    border: none;
-    padding: 18px;
-    display: block;
-    cursor: pointer;
-    transition: .2s;
-}
-
-strong {
-    font-weight: 600;
+    padding: 5px;
 }
 
 /*radio button and checkbox styling*/
@@ -105,7 +79,7 @@ input[type=checkbox]:checked + label.checkbox-label:before {
     line-height: 16px;
 }
 
-/*class and ID styles*/
+/*class and ID-related styles*/
 
 fieldset.questionnaire-card {
     background-color: #F5F2F2;
@@ -114,7 +88,29 @@ fieldset.questionnaire-card {
     margin: 110px auto;
     border: none;
     border-radius: 2.5px;
-    padding: 40px 90px 50px;    
+    padding: 40px 90px 50px;
+}
+
+.submit {
+    background-color: #BA0077;
+}
+
+.button {
+    background-color: #975bcc;
+}
+
+.button,
+.submit {
+    color: white;
+    font: 100 14px Roboto;
+    letter-spacing: .04em;
+    width: 200px;
+    margin: 45px auto 0;
+    border: none;
+    padding: 18px;
+    display: block;
+    cursor: pointer;
+    transition: .2s;
 }
 
 h2.title {
@@ -122,16 +118,8 @@ h2.title {
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(128, 128, 128, 0.23);
     padding-bottom: 30px;
-    font-size: 2.4em;
+    font-size: 2.3em;
     font-weight: 200;
-}
-
-.disabled h2 {
-    color: rgba(128, 128, 128, 0.74);
-    font-weight: 100;
-    font-size: 2.1em;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
-    padding-bottom: 25px;
 }
 
 .multiple-choice-header {
@@ -143,7 +131,7 @@ h2.title {
     color: rgba(28, 55, 68, 0.84);
     font-size: 1.2em;
     display: block;
-    padding: 15px 0 19px;
+    padding: 17px 0 19px;
 }
 
 .short-answer {
@@ -197,19 +185,27 @@ h2 + p.description {
     border-radius: 2px;
 }
 
+.disabled h2 {
+    color: rgba(128, 128, 128, 0.74);
+    font-weight: 100;
+    font-size: 2.1em;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.23);
+    padding-bottom: 25px;
+}
+
 img.form-image {
     width: 100%;
     margin: 20px 0 26px;
     display: block;
 }
 
-::-webkit-input-placeholder, :-ms-input-placeholder { 
+::-webkit-input-placeholder, :-ms-input-placeholder {
     font-size: .8rem;
     color: #9e9e9e;
     font-family: Roboto;
 }
 
-:-moz-placeholder,::-moz-placeholder { 
+:-moz-placeholder,::-moz-placeholder {
     color: #9e9e9e;
     font-family: Roboto;
     opacity:  1;
