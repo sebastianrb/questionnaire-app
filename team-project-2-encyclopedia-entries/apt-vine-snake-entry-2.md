@@ -1,5 +1,8 @@
 # The `sup` Tag
-*Inline Element*
+
+**Inline Element**
+
+*Tag used to format text as superscript*
 
 In HTML, the `sup` tag is used to define superscript text. The word "sup" is short for superscript.
 
@@ -18,11 +21,13 @@ To format text as superscript, wrap it in `sup` tags:
 This text, however, will be rendered as normal, unformatted text.
 ```
 
+Note `sup` elements require both an opening and closing tag.
+
 ### Attributes
 the `sup` tag has no element-specific attributes and, like all elements, accommodates the set of global attributes. [Click here](#) to learn more about HTML global attributes.
 
 ## Default Styling
-As noted above, superscript text is generally a fraction of the height of unformatted text and floats above the normal line of characters. This is achieved via a set of default CSS declarations associated with the `sup` tag; these declarations are defined by the User Agent styles specific to each browser. Here is a selection of the CSS styling for superscript text on the Chrome browser:
+As noted above, superscript text is generally a fraction of the height of unformatted text and floats vertically above the normal line of characters. This is achieved via a set of default CSS declarations associated with the `sup` tag; these declarations are defined by the User Agent styles specific to each browser. Here is a selection of the CSS styling for superscript text on the Chrome browser:
 
 ```
 sup {
@@ -33,7 +38,7 @@ sup {
 }
 ```
 
-This styling effectively shrinks the text to 75% of the normal text size and then positions it at the top of the text line. Like any other element, the User Agent styles can be overwritten and new CSS can be written by the developer to suit individual needs and preferences.
+This styling effectively shrinks the `sup` element to 75% of the normal text size and then positions it at the top of the text line. Like any other element, the User Agent styles can be overwritten and new CSS can be specified by the developer to suit individual needs and preferences.
 
 ## Using Superscript
 
