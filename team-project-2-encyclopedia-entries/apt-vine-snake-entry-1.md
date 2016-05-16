@@ -1,5 +1,7 @@
 #`<div>`
 
+**Block element**
+
 *Container to group elements for styling purposes*
 
 The `<div>` element is a block element used to define sections of a web page by grouping elements together. This grouping of elements makes it easy to position elements in a layout. The `<div>` element should be thus viewed as a container for other elements.
