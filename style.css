@@ -260,21 +260,22 @@ button:hover,
 
 /*validation bubbles*/
 .invalid::before {
-    content: "Please answer this question";
+    content: "!";
     display: block;
     color: #ad0808;
-    width: 100px;
+    width: 29px;
     position: absolute;
-    right: 647px;
-    padding: 7px;
+    right: 631px;
+    padding: 5px 10px 5px 1px;
     border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.74);
-    font-size: 0.8em;
-    border: 1px solid #6B08AD;
+    font-size: .9em;
+    border: 1px solid #ad0808;
     background-image: url("./images/right_arrow.png");
-    background-size: 22%;
+    background-size: 37%;
     background-repeat: no-repeat;
-    background-position: 101%;
+    background-position: 94%;
+    text-align: center;
 }
 
 fieldset.disabled .invalid::before {
