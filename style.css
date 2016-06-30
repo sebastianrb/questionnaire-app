@@ -267,14 +267,14 @@ button:hover,
     position: absolute;
     right: 647px;
     padding: 7px;
-    border-radius: 5px;
+    border-radius: 3px;
     background-color: rgba(255, 255, 255, 0.74);
     font-size: 0.8em;
-    border: 2px solid #6B08AD;
+    border: 1px solid #6B08AD;
     background-image: url("./images/right_arrow.png");
-    background-size: 27%;
+    background-size: 22%;
     background-repeat: no-repeat;
-    background-position: 104%;
+    background-position: 101%;
 }
 
 fieldset.disabled .invalid::before {
