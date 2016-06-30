@@ -5,10 +5,13 @@
 	<title>Questionnaire App</title>
 	<link rel="stylesheet" type="text/css" href="./style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,300,500,700" rel="stylesheet" type="text/css">
+	<script async type="text/javascript" src="./validator.js"></script>
+	<script async type="text/javascript" src="./validation.js"></script>
+	<script async type="text/javascript" src="./main.js"></script>
 </head>
 <body>
 	<form action="" class="questionnaire">
-		<fieldset class="questionnaire-card">
+		<fieldset class="questionnaire-card" id="card1">
 			<h2 class="title">
 				<strong>Questionnaire</strong> Mockup
 			</h2>
@@ -21,7 +24,7 @@
 			<button class="button">Continue</button>
 		</fieldset>
 
-		<fieldset class="questionnaire-card">
+		<fieldset class="questionnaire-card" id="card2">
 			<h2 class="title">
 					Section Title
 			</h2>
@@ -34,7 +37,7 @@
 			<button class="button">Continue</button>
 		</fieldset>
 
-		<fieldset class="questionnaire-card disabled">
+		<fieldset class="questionnaire-card disabled" id="card3">
 			<div class="disabled-gray"></div>
 			<h2>This section is disabled</h2>
 			<label class="question" for="card3-question1">Question</label>
@@ -42,7 +45,7 @@
 			<button class="button" disabled>Continue</button>
 		</fieldset>
 
-		<fieldset class="questionnaire-card">
+		<fieldset class="questionnaire-card" id="card4">
 			<h2 class="title">
 				<strong>Strong</strong> Section Title
 			</h2>
@@ -56,36 +59,37 @@
 			<button class="button">Continue</button>
 		</fieldset>
 
-		<fieldset class="questionnaire-card">
+		<fieldset class="questionnaire-card" id="card5">
 			<h2 class="title">Section Title w/ Form Elements</h2>
 			<p class="description">Description paragraph.</p>
 			<fieldset class="multiple-choice">
 			<legend class="multiple-choice-header">Multiple Choice w/ Radio Inputs</legend>
-				<input id="card5-radio1" type="radio" name="radio" class="radio">
+				<input id="card5-radio1" type="radio" name="radio" class="radio" value="Option A">
 				<label for="card5-radio1" class="radio-label">I like option A
 				</label>
-				<input id="card5-radio2" type="radio" name="radio" class="radio">
+				<input id="card5-radio2" type="radio" name="radio" class="radio" value="Option B">
 				<label for="card5-radio2" class="radio-label">I like option B
 				</label>
-				<input id="card5-radio3" type="radio" name="radio" class="radio">
+				<input id="card5-radio3" type="radio" name="radio" class="radio" value="Option C">
 				<label for="card5-radio3" class="radio-label">I like option C
 				</label>
 			</fieldset>
 			<fieldset class="multiple-choice">
 			<legend class="multiple-choice-header">Multiple Choice w/ Checkbox Inputs</legend>
-				<input id="card5-checkbox1" type="checkbox">
+				<input id="card5-checkbox1" type="checkbox" value="Option A">
 				<label for="card5-checkbox1" class="checkbox-label">I like option A</label>
-				<input id="card5-checkbox2" type="checkbox">
+				<input id="card5-checkbox2" type="checkbox" value="Option B">
 				<label for="card5-checkbox2" class="checkbox-label">I like option B</label>
-				<input id="card5-checkbox3" type="checkbox">
+				<input id="card5-checkbox3" type="checkbox" value="Option C">
 				<label for="card5-checkbox3" class="checkbox-label">I like option C</label>
 			</fieldset>
 			<label for="card5-select1" class="select-label required">Dropdown Select from the list below:</label>
 			<p class="description">Description paragraph.</p>
 			<div class="select">
 				<select name="" id="card5-select1" class="dropdown">
-					<option value="">Option 1</option>
-					<option value="">Option 2</option>
+					<option selected disabled value="">Please select an option</option>
+					<option value="Option 1">Option 1</option>
+					<option value="Option 2">Option 2</option>
 				</select>
 			</div>
 			<input type="submit" class="submit">

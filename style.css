@@ -257,3 +257,26 @@ button:hover,
     background-color: #9F48D2;
     cursor: default;
 }
+
+/*validation bubbles*/
+.invalid::before {
+    content: "Please answer this question";
+    display: block;
+    color: #230303;
+    width: 100px;
+    position: absolute;
+    right: 647px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.74);
+    font-size: 0.8em;
+    border: 2px solid #6B08AD;
+    background-image: url("./images/right_arrow.png");
+    background-size: 27%;
+    background-repeat: no-repeat;
+    background-position: 104%;
+}
+
+fieldset.disabled .invalid::before {
+    display: none;
+}
