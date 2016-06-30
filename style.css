@@ -262,7 +262,7 @@ button:hover,
 .invalid::before {
     content: "Please answer this question";
     display: block;
-    color: #230303;
+    color: #ad0808;
     width: 100px;
     position: absolute;
     right: 647px;
