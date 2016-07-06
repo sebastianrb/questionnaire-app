@@ -575,10 +575,19 @@ submitButton.addEventListener("click", function(event) {
         var checkboxSatisfied = false;
         alert("Invalid input");
         for(i = 0; i < labels.length; i++) {
-            if(!labels[i].nextSibling.nextSibling.value) {
-                labels[i].classList.add("invalid");
+            if(labels[i].nextSibling.nextSibling.getAttribute("id") == "card1-email") {
+                if(!labels[i].nextSibling.nextSibling.value || !validator.isEmailAddress(labels[i].nextSibling.nextSibling.value)) {
+                    labels[i].classList.add("invalid");
+                    console.log("Email is not good");
+                } else {
+                    labels[i].classList.remove("invalid");
+                }
             } else {
-                labels[i].classList.remove("invalid");
+                if(!labels[i].nextSibling.nextSibling.value) {
+                    labels[i].classList.add("invalid");
+                } else {
+                    labels[i].classList.remove("invalid");
+                }
             }
             if(i === 7) {
                 if(!labels[i].nextSibling.nextSibling.nextSibling.nextSibling.value) {
